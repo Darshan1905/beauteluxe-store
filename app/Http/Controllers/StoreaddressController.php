@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\storeaddress;
+use App\Models;
 use Illuminate\Http\Request;
 
 class StoreaddressController extends Controller
