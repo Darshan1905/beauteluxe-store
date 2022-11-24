@@ -10,6 +10,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <link rel="stylesheet" href="{{url('css/style.css')}}" />
+    <link rel="stylesheet" href="{{url('css/store.css')}}" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -32,353 +33,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    @media (min-width: 576px) {
-        .store-modal .modal-dialog {
-            max-width: 1300px !important;
-            margin: 4.75rem auto !important;
-            /* margin-right: 20px !important; */
-        }
-    }
 
-    .get_directions {
-        padding: 6px 4%;
-        background: transparent;
-        color: black;
-        border: 2px solid black;
-        margin: unset;
-        font-size: unset;
-    }
-
-    .get_directions:hover {
-        background: black;
-        color: white;
-        transition: .5s;
-    }
-
-    .store_details {
-        color: black;
-    }
-
-    .store_details:hover {
-        color: black;
-    }
-
-    .four_img img {
-        width: 50%;
-        float: left;
-        padding: 3%;
-    }
-
-    .store-modal .modal-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        pointer-events: auto;
-        background-color: Transparent !important;
-        background-clip: padding-box;
-        border: 0 !important;
-        border-radius: none !important;
-        outline: 0;
-    }
-
-    .store-modal .modal {
-        top: -40px !important;
-    }
-
-    .store-modal {
-        background: #00000060 !important;
-    }
-
-    .prev {
-        position: absolute;
-        left: 0;
-        top: 45%
-    }
-
-    .next {
-        position: absolute;
-        right: 0;
-        top: 45%
-    }
-
-    /* Header */
-
-    .logo-index-page-2 li a {
-        color: #fff;
-        list-style: none;
-        padding: 20px;
-    }
-
-    .logo-index-page-2 a {
-        /* color: #fff; */
-        text-decoration: none;
-    }
-
-    .header-top-nav-index-2 .logo-index-page-2 .current-tab a {
-
-        color: #aa8453 !important;
-        font-weight: bold;
-
-    }
-
-    .Store-index img {
-        padding: 5px;
-    }
-
-    .hamburger div {
-        width: 18px;
-        height: 3px;
-        margin-bottom: 2px;
-        background-color: #fff;
-    }
-
-    @media screen and (max-width: 767px) {
-        .header-top-nav-index {
-            flex-direction: column !important;
-        }
-
-        .logo-index-page img {
-            width: 100%;
-        }
-
-        .banner h1 {
-            font-size: 20px;
-        }
-    }
-
-    @media screen and (max-width:400px) {
-        .banner h1 {
-            font-size: 15px !important;
-        }
-    }
-
-
-    /* Footer Section  */
-
-    .main-footer-section {
-        max-width: 1350px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .foothead {
-        font-weight: bold;
-        font-size: 17px;
-    }
-
-    .footsection {
-        background-color: #070322;
-        color: #fff;
-    }
-
-    .footdata ul li {
-        list-style: none;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .footdata ul {
-        padding-left: 0px !important;
-    }
-
-    .footer-logo-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-logo-section img {
-        width: 50%;
-    }
-
-    .footer-logo-section p {
-        margin: 0 50px;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .child-foot p {
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .foot-email {
-        border-radius: 5px;
-        border: none;
-        padding: 5px 50px 5px 20px;
-        background: transparent !important;
-        border: 1px solid #fff;
-    }
-
-    .foot-email::placeholder {
-        font-size: 12px;
-    }
-
-    .child-foot {
-        display: flex !important;
-        /* justify-content: ; */
-    }
-
-
-
-    .f-email {
-        position: relative;
-    }
-
-    .f-email::before {
-        content: " ";
-        position: absolute;
-        top: 8px;
-        right: 0;
-        width: 20px;
-        height: 50px;
-        background: url("/Images/Path\ 76.png");
-        /* background: url("/picture/Icon\ ionic-ios-arrow-down.svg"); */
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }
-
-    @media screen and (max-width: 1199px) {
-        .foot-email {
-            /* border-radius: 5px;
-    border: none; */
-            padding: 5px 18px 5px 20px;
-        }
-
-        .footer-logo-section p {
-            margin: 0 30px;
-            font-size: 16px;
-            /* text-align: center; */
-        }
-
-        .foothead {
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        .footdata ul li {
-            list-style: none;
-            font-size: 14px;
-            font-weight: 400;
-        }
-    }
-
-    @media screen and (max-width: 991px) {
-        .main-footer-section {
-            /* padding-right: 20px; */
-        }
-
-        .footdata .quick-links {
-            align-items: center;
-            justify-content: center;
-        }
-
-        .footer-footdata {
-            margin-top: 20px !important;
-            margin-left: 30px !important;
-        }
-
-        .child-foot {
-            justify-content: center !important;
-            text-align: center !important;
-        }
-
-    }
-
-    @media screen and (max-width: 767px) {
-        .footsection {
-            text-align: center;
-        }
-
-        .footdata {
-            margin-top: 20px;
-        }
-
-        .main-footer-section {
-            padding-right: 0px;
-        }
-
-        .child-foot {
-            text-align: center;
-            /* display: block !important; */
-            /* float: right !important; */
-        }
-
-        .footer-logo-section img {
-            width: 45%;
-        }
-
-        .footer-logo-section p {
-            margin: 0 20px;
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .footer-footdata {
-            margin-top: 0px !important;
-            margin-left: 0px !important;
-        }
-    }
-
-    @media screen and (max-width:530px) {
-        .child-foot {
-            flex-direction: column !important;
-        }
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .nav-list {
-        /* display: flex; */
-        justify-content: right;
-    }
-
-    .nav-item {
-        display: block;
-    }
-
-    ul {
-        background-color: var(--Dark-blue);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    @media (max-width: 767px) {
-        .hamburger {
-            cursor: pointer;
-            display: block;
-            padding-left: 1rem;
-        }
-
-        .nav-item {
-            display: none;
-        }
-
-        .nav-item.show {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .logo-index-page-2 {
-            background-color: #070322;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: left !important;
-            z-index: 1;
-            text-align: left !important;
-            position: absolute;
-            top: 10.8%;
-            left: 0%;
-        }
-    }
-    </style>
 </head>
 
 <body>
@@ -387,16 +42,16 @@
     <section class="" style="background-color: #070322; border-bottom: 2px solid #aa8453">
         <div class="header-top-nav-index d-flex align-items-center justify-content-between ps-3 pe-3">
             <div class="social-index pt-3 pb-3 d-flex justify-content-between">
-                <img class="pe-2" src="/Images/whatsapp.png" alt="" style="width: 100%" />
-                <img class="pe-2" src="/Images/linkedin.png" alt="" style="width: 100%" />
-                <img src="/Images/facebook.png" alt="" style="width: 100%" />
+                <img class="pe-2" src="/Images/whatsapp.png" alt="" style="width:35px; height:25px" />
+                <img class="pe-2" src="/Images/linkedin.png" alt="" style="width:35px; height:25px" />
+                <img src="/Images/facebook.png" alt="" style="width:30px; height:25px" />
             </div>
-            <div class="logo-index-page pt-3 pb-3">
+            <div class="logo-index-page d-none d-md-block pt-3 pb-3">
                 <a href="http://43.204.32.147/"> <img src="/Images/Beauty-Luxe.png" alt="" /></a>
             </div>
             <div class="Store-index pt-3 pb-3 d-flex align-items-center">
-                <a href="http://43.204.32.147/stores">
-                    <div class="d-flex align-items-center">
+                <a href="http://43.204.32.147/stores" style="text-decoration:none !important">
+                    <div class=" d-none d-md-flex align-items-center">
                         <img src="/Images/Icon material-add-location.svg" alt="" width="20px" class="mb-2" />
                         <h6 class="ps-2" style="color: #fff">Stores</h6>
                     </div>
@@ -406,30 +61,59 @@
         </div>
     </section>
 
-    <section class="" style="background-color: #070322">
-        <div class="header-top-nav-index-2 d-flex align-items-center justify-content-between ps-3 pe-3">
-            <div id="hamburger" class="hamburger" onclick="myFunction()">
+    <section class="pt-3 pb-3" style="background-color: #070322">
+        <div class="header-top-nav-index-2 d-flex align-items-center justify-content-between pe-3">
+            <div class="hamburger">
                 <div></div>
-                <div></div>
+                <div class="hsmall"></div>
                 <div></div>
             </div>
-            <div class="social-index pt-3 pb-3 d-flex justify-content-between"></div>
 
-            <div class="logo-index-page-2 d-flex d-row  nav-list" id="nav-list">
-                <li class="nav-item current-tab"><a href="brands.html"> Brands</a></li>
-                <li class="nav-item"><a href="fragrance.html"> Fragrance</a></li>
-                <li class="nav-item"><a href="skincare.html"> Skincare</a></li>
-                <li class="nav-item"><a href="haircare.html"> Haircare</a></li>
-                <li class="nav-item"><a href="makeup.html"> Makeup</a></li>
-                <li class="nav-item"><a href="sales.html"> Sales</a></li>
+
+
+            <div class="social-index">
+                <div class="logo-index-page d-block d-md-none ">
+                    <a href="http://43.204.32.147/"> <img src="/Images/Beauty-Luxe.png" alt="" /></a>
+                </div>
+            </div>
+
+            <div class="logo-index-page-2  nav-list">
+                <li class="nav-item"><a href="#"> Brands</a></li>
+                <li class="nav-item"><a href="https://43.204.32.147/fragrance.html"> Fragrance <img
+                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
+                <li class="nav-item"><a href="https://43.204.32.147/skincare.html"> Skincare <img
+                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
+                <li class="nav-item"><a href="https://43.204.32.147/haircare.html"> Haircare <img
+                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
+                <li class="nav-item"><a href="https://43.204.32.147/makeup.html"> Makeup <img
+                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
+                <li class="nav-item"><a href="https://43.204.32.147/sale.html"> Sales</a></li>
+                <div class="cancel">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </div>
+
                 <!-- <img src="/Images/Beauty-Luxe.png" alt="" > -->
             </div>
 
             <div class="Store-index pt-3 pb-3 d-flex align-items-center">
-                <img src="/Images/Icon awesome-search.svg" alt="" style="width: 30px" />
-                <img src="/Images/Icon awesome-heart.svg" alt="" style="width: 30px" />
-                <img src="/Images/Icon awesome-shopping-cart.svg" alt="" style="width: 30px" />
-                <img src="/Images/Icon material-supervisor-account.svg" alt="" style="width: 25px" />
+                <div>
+                    <a href=""><img src="/Images/Icon awesome-search.svg" alt="" style="width: 30px" />
+                    </a>
+                </div>
+                <div class="ps-3 d-none d-md-block">
+                    <a href=""><img src="/Images/Icon awesome-heart.svg" alt="" style="width: 30px" />
+                    </a>
+                </div>
+                <div class="ps-3 d-none d-md-block">
+                    <a href="http://43.204.32.147/customer/account/login/"><img src="/Images/headuser.png" alt=""
+                            style="width: 32px" />
+                    </a>
+                </div>
+                <div class="ps-3">
+                    <a href=""><img src="/Images/Icon awesome-shopping-cart.svg" alt="" style="width: 30px" />
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -440,30 +124,8 @@
 
     <div class="container mt-5 mb-5">
         <div class="row">
-            <!-- <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div style="padding-left: 17px;">
-                    <p><b>Inorbit Mall – Vadodara</b></p>
-                    <p>Ground Floor Alembic Rd, Opposite to Alembic School, <br> Gorwa, Vadodara, Gujarat - 390023.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="four_img">
-                            <img src="http://localhost/beuty_concept/public/pictures/popup1.png" alt="">
-                            <img src="http://localhost/beuty_concept/public/pictures/popup2.png" alt="">
-                            <img src="http://localhost/beuty_concept/public/pictures/popup3.png" alt="">
-                            <img src="http://localhost/beuty_concept/public/pictures/popup4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-7" style="padding-top: 4%;">
-                        <video style="width: 100%;" controls>
-                            <source src="http://localhost/beuty_concept/public/video/Bvlgari Rose Goldea Blossom Delight EDT.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1"></div> -->
-            <div class="col-md-6 storecard">
+
+            <div class="col-lg-6 col-md-12 storecard">
                 <div class="wrapper mt-3 mb-5">
                     <div class="st">
                         <label class="storelabel">
@@ -490,11 +152,7 @@
                                 <option selected value="0">City</option>
 
 
-                                <!---   city data   --->
-                                <!-- @foreach ($storecity as $city)
-                                    <option value="{{ $city->id }}">{{ $city->name }}</option>
-                                @endforeach -->
-                                <!---   city data   --->
+
 
 
                             </select>
@@ -567,7 +225,7 @@
             </div>
 
             <!-------------map ifram--------------->
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="iframes">
                     <iframe
                         src="https://www.google.com/maps/d/embed?mid=1MuChuinf5MEmMcCwBcM3bZjpuILEPyc&hl=en&ehbc=2E312F"
@@ -600,77 +258,201 @@
     <div class="container-fluid footsection">
         <div class="main-footer-section">
             <div class="row pt-5 pb-4">
-                <div class="col-lg-5 col-md-12">
+                <div class="col-lg-4 col-md-12 pt-3">
                     <div class="footer-logo-section">
-                        <img src="/Images/Beauty-Luxe-foot.png" alt="" width="100%" />
+                        <img src="/Images/Beauty-Luxe.png" alt="" />
                         <p class="mt-5">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                            aliquyam erat <br /><br />
-                            sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                            est Lorem ipsum dolor sit amet
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum facilisis sem id
+                            ultrices. Proin hendrerit tellus erat, in aliquet lectus aliquet sit amet. Phasellus vel
+                            sagittis arcu. In hac habitasse platea dictumst.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-12s">
+                <div class="col-lg-8 col-md-12 d-none d-md-block">
                     <div class="row footer-footdata">
                         <div class="col-lg-4 col-md-4">
                             <div class="footdata">
                                 <ul>
                                     <li>
-                                        <div class="foothead mb-3">BEAUT LUXE</div>
+                                        <div class="foothead mb-3">BEAUTE LUXE</div>
                                     </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Who we are ? </a> </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Terms & Conditions </a>
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Who we are
+                                            ? </a> </li>
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Terms &
+                                            Conditions </a>
                                     </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> We respect your privacy
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> We respect
+                                            your privacy
                                         </a> </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Contact Us </a> </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Shipping & Returns </a>
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Contact Us
+                                        </a> </li>
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Shipping &
+                                            Returns </a>
                                     </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Authentication
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;">
+                                            Authentication
                                             Certificate </a> </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> FAQs </a> </li>
+                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> FAQs </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-3 col-md-4">
                             <div class="footdata">
                                 <ul>
                                     <li>
                                         <div class="foothead mb-3">SHOP BY</div>
                                     </li>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Fragrance For Him</li>
-                                    </a>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Fragrance For Her</li>
-                                    </a>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Makeup</li></a>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Body Care</li></a>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Home Fragrance</li></a>
-                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Luggage</li></a>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=male"
+                                            style="color:#fff; text-decoration:none;"> Fragrance
+                                            For Him
+                                        </a>
+                                    </li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=female"
+                                            style="color:#fff; text-decoration:none;"> Fragrance
+                                            For Her
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/makeup.html"
+                                            style="color:#fff; text-decoration:none;"> Makeup
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/skincare.html"
+                                            style="color:#fff; text-decoration:none;"> Skincare
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/haircare.html"
+                                            style="color:#fff; text-decoration:none;"> Haircare
+
+                                        </a></li>
+
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-5 col-md-4">
                             <div class="footdata">
                                 <ul class="quick-links">
                                     <li>
-                                        <div class="foothead mb-3">QUICK LINKS:</div>
+                                        <div class="foothead mb-3">SUBSCRIBE US</div>
                                     </li>
-                                    <a href="#"> <img src="/Images/whatsapp.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="#"> <img src="/Images/linkedin.png" alt="" /></a>&nbsp;&nbsp;
-                                    <a href="#"> <img src="Images/facebook.png" alt="" /></a>
+                                    <div class="child-foot align-items-center">
+                                        <div class="foot-email-block">
+                                            <label class="f-email">
+                                                <input type="email" class="foot-email text-white"
+                                                    placeholder="Enter Your email address" />
+                                            </label>
+                                        </div>
+                                        <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
+
+                                    </div>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="child-foot align-items-center">
-                        <p class="mt-3 pe-2">Sign up for our Newsletter</p>
-                        <div class="foot-email-block">
-                            <label class="f-email">
-                                <input type="email" class="foot-email" placeholder="Your email address" />
-                            </label>
+
+                </div>
+                <div class="col-md-12 d-block d-md-none mt-5 footer-collapse">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    BEAUTE LUXE
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <code class="text-start">
+                                    <div class="footdata">
+                                <ul>
+                                   
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Who we are
+                                            ? </a> </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Terms &
+                                            Conditions </a>
+                                    </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> We respect
+                                            your privacy
+                                        </a> </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Contact Us
+                                        </a> </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Shipping &
+                                            Returns </a>
+                                    </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;">
+                                            Authentication
+                                            Certificate </a> </li>
+                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> FAQs </a>
+                                    </li>
+                                </ul>
+                            </div>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    SHOP BY
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <code class="text-start">
+                                    <div class="footdata">
+                                <ul>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=male"
+                                            style=" text-decoration:none;"> Fragrance
+                                            For Him
+                                        </a>
+                                    </li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=female"
+                                            style=" text-decoration:none;"> Fragrance
+                                            For Her
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/makeup.html"
+                                            style=" text-decoration:none;"> Makeup
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/skincare.html"
+                                            style=" text-decoration:none;"> Skincare
+                                        </a></li>
+                                    <li class="mt-3"> <a href="http://43.204.32.147/haircare.html"
+                                            style=" text-decoration:none;"> Haircare
+
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    SUBSCRIBE US
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <code><div class="footdata">
+                                <ul class="quick-links">
+                                    <div class="child-foot align-items-center">
+                                        <div class="foot-email-block">
+                                            <label class="f-email">
+                                                <input type="email" class="foot-email text-white"
+                                                    placeholder="Enter Your email address" />
+                                            </label>
+                                        </div>
+                                        <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
+
+                                    </div>
+                                </ul>
+                            </div></code>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -721,6 +503,16 @@
     function loadGoogleTranslate() {
         new google.translate.TranslateElement("google_element");
     }
+    </script>
+
+    <script>
+    document.querySelector('.hamburger').addEventListener('click', () =>
+        document.querySelector('.nav-list').classList.toggle('show'));
+    </script>
+
+    <script>
+    document.querySelector('.cancel').addEventListener('click', () =>
+        document.querySelector('.nav-list').classList.toggle('show'));
     </script>
 
     <script>
