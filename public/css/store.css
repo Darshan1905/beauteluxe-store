@@ -129,9 +129,7 @@
     transform: rotate(-40deg);
 }
 
-.logo-index-page {
-    padding-left: 16.5%;
-}
+
 
 .logo-index-page img {
     width: 85%;
@@ -159,6 +157,61 @@
 .nav-item {
     display: block;
 }
+
+
+.header-top-nav-index .head-social{
+    width:35px;
+    height:25px;
+    padding: 0 10px 0 0;
+}
+
+.header-top-nav-index .head-social-d{
+    width:30px;
+    height:25px;
+    padding: 0 3px 0 0;
+}
+
+.store-banner-text{
+    top: 40%;
+    left: 12%;
+
+}
+
+.store-banner-text a{
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:550px) {
+    .header-top-nav-index .head-social{
+        width:30px;
+        height:20px;
+        padding: 0 10px 0 0;
+    }
+
+    .header-top-nav-index .head-social-d{
+        width:25px;
+        height:20px;
+        padding: 0 3px 0 0;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .header-top-nav-index .head-social{
+        width:30px;
+        height:20px;
+        padding: 0 10px 0 0;
+    }
+
+    .header-top-nav-index .head-social-d{
+        width:25px;
+        height:20px;
+        padding: 0 3px 0 0;
+    }
+
+}
+
 
 @media screen and (max-width: 1199px) {
     .logo-index-page-2 {
@@ -306,7 +359,7 @@
 
 .footer-logo-section p {
     margin: 0 50px 0 0;
-    font-size: 18px;
+    font-size: 14px;
     /* text-align: center; */
 }
 
@@ -386,6 +439,10 @@
     background-color: #070322 !important;
 }
 
+.main-footer-section .foot-para{
+    margin-right:120px;
+}
+
 @media screen and (max-width: 1199px) {
     .foot-email {
         /* border-radius: 5px;
@@ -399,7 +456,7 @@
 
     .footer-logo-section p {
         margin: 0 30px;
-        font-size: 16px;
+        font-size: 14px;
         /* text-align: center; */
     }
 
@@ -412,6 +469,10 @@
         list-style: none;
         font-size: 14px;
         font-weight: 400;
+    }
+
+    .main-footer-section .foot-para{
+        margin-right:40px;
     }
 }
 
@@ -428,14 +489,21 @@
 
     .child-foot {
         justify-content: center !important;
-        text-align: center !important;
+        /* text-align: center !important; */
     }
 
     .footer-logo-section img {
         width: 45%;
         margin: 0 auto;
     }
+
+
+    .main-footer-section .foot-para{
+        margin-right:0;
+    }
 }
+
+
 
 @media screen and (max-width: 767px) {
     .footsection {
@@ -463,7 +531,7 @@
 
     .footer-logo-section p {
         margin: 0 20px;
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
     }
 

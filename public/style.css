@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: white;
+    /* background-color: white; */
     top: 0px;
     width: 100%;
   }
@@ -32,30 +32,29 @@
     margin-right: 100px;
   }
 
-  li {
-    float: left;
-  }
+
 
   li,
   a {
-    font-size: 18px;
+    font-size: 14px;
     display: block;
-    color: #58d68d;
-    text-align: center;
-    padding: 7px 12px;
+
+    padding: 2px 0;
     text-decoration: none;
     transition: 0.4s;
   }
 
-  li:hover,
-  a:hover {
-    background-color: #fafafa;
+  /* Google translate */
+
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    display: none !important;
   }
+
 
   /* Intro */
   h1 {
     margin-top: 20px;
-    margin-left: 100px;
+
     font-size: 100px;
     color: white;
     margin-bottom: 0px;
@@ -64,7 +63,7 @@
   h2 {
     margin-top: 0px;
     margin-bottom: 50px;
-    margin-left: 100px;
+
     color: white;
     max-width: 1000px;
     opacity: 0.7;
@@ -73,7 +72,6 @@
   input,
   textarea {
     margin-top: 10px;
-    width: 300px;
     height: 25px;
     font-size: 15px;
     border: 0px;
@@ -234,4 +232,4 @@
       opacity: 1;
     }
   }
-  /* End Modal */   
+  /* End Modal */

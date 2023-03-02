@@ -9,10 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <link rel="stylesheet" href="{{url('css/style.css')}}" />
-    <link rel="stylesheet" href="{{url('css/store.css')}}" />
+    <link rel="stylesheet" href="{{ url('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url('css/store.css') }}" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
@@ -28,98 +31,61 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+
     {{-- jquery cdn link --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 
 </head>
 
 <body>
 
 
-    <section class="" style="background-color: #070322; border-bottom: 2px solid #aa8453">
-        <div class="header-top-nav-index d-flex align-items-center justify-content-between ps-3 pe-3">
-            <div class="social-index pt-3 pb-3 d-flex justify-content-between">
-                <img class="pe-2" src="/Images/whatsapp.png" alt="" style="width:35px; height:25px" />
-                <img class="pe-2" src="/Images/linkedin.png" alt="" style="width:35px; height:25px" />
-                <img src="/Images/facebook.png" alt="" style="width:30px; height:25px" />
+    <section class="" style=" border-bottom: 2px solid #aa8453">
+        <div class="container">
+            <div class="header-top-nav-index d-flex align-items-center justify-content-between">
+                <div class="social-index pt-3 pb-3 d-flex justify-content-between">
+                  <a href="https://www.instagram.com/lovebeauteluxe">  <img class="head-social" src="{{asset('/Images/head-insta.png')}}" alt=""  /></a>
+                  <a href="https://www.linkedin.com/company/beauty-concepts-pvt.-ltd.">  <img class="head-social" src="{{asset('/Images/linkedin.png')}}" alt=""  /></a>
+                    <a href="https://www.facebook.com/lovebeauteluxe">  <img class="head-social-d" src="{{asset('/Images/facebook.png')}}" alt=""  /></a>
+                </div>
+                <div class="logo-index-page d-block pt-3 pb-3">
+                    <a href="https://beauteluxe.in/"> <img src="{{asset('/Images/Beauty-Luxe.png')}}" alt="" /></a>
+                </div>
+                <div class="Store-index pt-3 pb-3 d-flex align-items-center">
+                    <a href="" style="text-decoration:none !important">
+                        <div class=" d-flex align-items-center">
+                            <a href=""> <img src="{{asset('/Images/store-bcpl-icon.png')}}" alt="" width="95%" class="" /></a>
+                            <div>
+                                <a href=""> <h6 class="d-none d-md-block mt-2" style="color: #000">Stores</h6></a>
+                              <a href="https://beauteluxe.in/customer/account/login/">  <img class="d-block d-md-none" src="{{asset('/Images/mobile-user-icon.png')}}" alt=""
+                                    width="80%" /></a>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
             </div>
-            <div class="logo-index-page d-none d-md-block pt-3 pb-3">
-                <a href="http://43.204.32.147/"> <img src="/Images/Beauty-Luxe.png" alt="" /></a>
-            </div>
-            <div class="Store-index pt-3 pb-3 d-flex align-items-center">
-                <a href="http://43.204.32.147/stores" style="text-decoration:none !important">
-                    <div class=" d-none d-md-flex align-items-center">
-                        <img src="/Images/Icon material-add-location.svg" alt="" width="20px" class="mb-2" />
-                        <h6 class="ps-2" style="color: #fff">Stores</h6>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="position-relative">
+                <img src="{{asset('/Images/store-banner.jpeg')}}" alt="" style="height: 200px; width:100%; object-fit:cover">
+                <div class="position-absolute store-banner-text">
+                    <div class="d-flex">
+                        <a href="https://beauteluxe.in/" class="text-white fw-bold"> Home </a> &nbsp;<a class="text-white"> > Haircare </a>
+
                     </div>
-                </a>
-                <div class="ps-5" id="google_element"></div>
+                </div>
             </div>
+
         </div>
     </section>
-
-    <section class="pt-3 pb-3" style="background-color: #070322">
-        <div class="header-top-nav-index-2 d-flex align-items-center justify-content-between pe-3">
-            <div class="hamburger">
-                <div></div>
-                <div class="hsmall"></div>
-                <div></div>
-            </div>
-
-
-
-            <div class="social-index">
-                <div class="logo-index-page d-block d-md-none ">
-                    <a href="http://43.204.32.147/"> <img src="/Images/Beauty-Luxe.png" alt="" /></a>
-                </div>
-            </div>
-
-            <div class="logo-index-page-2  nav-list">
-                <li class="nav-item"><a href="#"> Brands</a></li>
-                <li class="nav-item"><a href="https://43.204.32.147/fragrance.html"> Fragrance <img
-                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
-                <li class="nav-item"><a href="https://43.204.32.147/skincare.html"> Skincare <img
-                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
-                <li class="nav-item"><a href="https://43.204.32.147/haircare.html"> Haircare <img
-                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
-                <li class="nav-item"><a href="https://43.204.32.147/makeup.html"> Makeup <img
-                            src="/Images/icons8-expand-arrow-24 1.svg" alt=""></a></li>
-                <li class="nav-item"><a href="https://43.204.32.147/sale.html"> Sales</a></li>
-                <div class="cancel">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                </div>
-
-                <!-- <img src="/Images/Beauty-Luxe.png" alt="" > -->
-            </div>
-
-            <div class="Store-index pt-3 pb-3 d-flex align-items-center">
-                <div>
-                    <a href=""><img src="/Images/Icon awesome-search.svg" alt="" style="width: 30px" />
-                    </a>
-                </div>
-                <div class="ps-3 d-none d-md-block">
-                    <a href=""><img src="/Images/Icon awesome-heart.svg" alt="" style="width: 30px" />
-                    </a>
-                </div>
-                <div class="ps-3 d-none d-md-block">
-                    <a href="http://43.204.32.147/customer/account/login/"><img src="/Images/headuser.png" alt=""
-                            style="width: 32px" />
-                    </a>
-                </div>
-                <div class="ps-3">
-                    <a href=""><img src="/Images/Icon awesome-shopping-cart.svg" alt="" style="width: 30px" />
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- <img src="pictures/store-locator-01.png" width="100%" alt="" /> -->
 
 
     <div class="container mt-5 mb-5">
@@ -136,7 +102,7 @@
 
                                 <!---   store data   --->
                                 @foreach ($storedata as $store)
-                                <option value="{{ $store->id }}">{{ $store->name }}</option>
+                                    <option value="{{ $store->id }}">{{ $store->name }}</option>
                                 @endforeach
                                 <!---   store data   --->
 
@@ -165,56 +131,57 @@
                     <!--------- Your Store Data-------->
 
                     <div class="scroll-page store">
-                        @if($storeaddres)
-                        @foreach ($storeaddres as $key => $value)
-                        <?php
-                     $images = array();
-                      $images = DB::table('addresses_images')->where('address_id',$value->id)->get();
-                      ?>
-                        <p class="mt-m"><b>{{ $value->storename }}</b></p>
+                        @if ($storeaddres)
+                            @foreach ($storeaddres as $key => $value)
+                                <?php
+                                $images = [];
+                                $images = DB::table('addresses_images')
+                                    ->where('address_id', $value->id)
+                                    ->get();
+                                ?>
+                                <p class="mt-m"><b>{{ $value->storename }}</b></p>
 
-                        <p>{{ $value->storeaddress }}</p>
-                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a>
+                                <p>{{ $value->storeaddress }}</p>
+                                {{-- <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a>
                         <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}" id="button_1"
                             class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);">Store
                             Details</a>
 
-                        <hr>
+                        <hr> --}}
 
 
-                        <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-fullscreen-sm-down">
+                                <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen-sm-down">
 
 
 
-                                <div class="modal-content">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                    <div class="modal-body">
-                                        <div class="container">
-                                            <div class="slideshow-container">
-                                                @if(!empty($images))
-                                                @foreach ($images as $key => $img)
-
-                                                <div class="mySlides1">
-                                                    <img style="width:100%" src="{{ URL::to('/') }}/{{$img->image}}"
-                                                        id="imageResult" style="width:100%" height="600px" />
-                                                    <div class="note">
+                                        <div class="modal-content">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="slideshow-container owl-carousel owl-theme home">
+                                                        @if (!empty($images))
+                                                            @foreach ($images as $key => $img)
+                                                                <div class="item">
+                                                                    <img style="width:100%"
+                                                                        src="{{ URL::to('/') }}/{{ $img->image }}"
+                                                                        id="imageResult" style="width:100%"
+                                                                        height="600px" />
+                                                                    <div class="note">
+                                                                    </div>
+                                                                </div>
+                                                            @endforeach
+                                                        @endif
                                                     </div>
+
                                                 </div>
-                                                @endforeach
-                                                @endif
                                             </div>
-                                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        @endforeach
+                            @endforeach
                         @endif
 
                     </div>
@@ -245,26 +212,16 @@
 
     <!-- footer -->
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5"></div>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4"></div>
-            </div>
-        </div>
-    </section>
+
 
     <div class="container-fluid footsection">
         <div class="main-footer-section">
-            <div class="row pt-5 pb-4">
+            <div class="row pt-5 pb-5">
                 <div class="col-lg-4 col-md-12 pt-3">
                     <div class="footer-logo-section">
-                        <img src="/Images/Beauty-Luxe.png" alt="" />
-                        <p class="mt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum facilisis sem id
-                            ultrices. Proin hendrerit tellus erat, in aliquet lectus aliquet sit amet. Phasellus vel
-                            sagittis arcu. In hac habitasse platea dictumst.
+                        <img src="{{asset('/Images/footer-logo-new.png')}}" alt="" />
+                        <p class="mt-3 foot-para" style="line-height:2;">
+                            BeauteLuxe has redefined conventional shopping experience with a brand portfolio that represents the pinnacle of the craftsmanship and unsurpassed quality further reinforcing its position as India's most desirable destination for world class brands.
                         </p>
                     </div>
                 </div>
@@ -276,23 +233,27 @@
                                     <li>
                                         <div class="foothead mb-3">BEAUTE LUXE</div>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Who we are
+                                    <li class="my-1"> <a href="https://beauteluxe.in/who-we-are" style="color:#fff; text-decoration:none;">
+                                            Who we are
                                             ? </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Terms &
+                                    <li class="my-1"> <a href="https://beauteluxe.in/terms-conditions" style="color:#fff; text-decoration:none;">
+                                            Terms &
                                             Conditions </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> We respect
+                                    <li class="my-1"> <a href="https://beauteluxe.in/privacy-policy" style="color:#fff; text-decoration:none;">
+                                            We respect
                                             your privacy
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Contact Us
+                                    <li class="my-1"> <a href="https://beauteluxe.in/contact-us" style="color:#fff; text-decoration:none;">
+                                            Contact Us
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> Shipping &
+                                    <li class="my-1"> <a href="https://beauteluxe.in/shipping-returns" style="color:#fff; text-decoration:none;">
+                                            Shipping &
                                             Returns </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;">
-                                            Authentication
-                                            Certificate </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#fff; text-decoration:none;"> FAQs </a>
+
+                                    <li class="my-1"> <a href="https://beauteluxe.in/faqs" style="color:#fff; text-decoration:none;">
+                                            FAQs </a>
                                     </li>
                                 </ul>
                             </div>
@@ -303,22 +264,22 @@
                                     <li>
                                         <div class="foothead mb-3">SHOP BY</div>
                                     </li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=male"
+                                    <li class="my-1"> <a href="https://beauteluxe.in/fragrance.html?gender=male"
                                             style="color:#fff; text-decoration:none;"> Fragrance
                                             For Him
                                         </a>
                                     </li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=female"
+                                    <li class="my-1"> <a href="https://beauteluxe.in/fragrance.html?gender=female"
                                             style="color:#fff; text-decoration:none;"> Fragrance
                                             For Her
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/makeup.html"
+                                    <li class="my-1"> <a href="https://beauteluxe.in/makeup.html"
                                             style="color:#fff; text-decoration:none;"> Makeup
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/skincare.html"
+                                    <li class="my-1"> <a href="https://beauteluxe.in/skincare.html"
                                             style="color:#fff; text-decoration:none;"> Skincare
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/haircare.html"
+                                    <li class="my-1"> <a href="https://beauteluxe.in/haircare.html"
                                             style="color:#fff; text-decoration:none;"> Haircare
 
                                         </a></li>
@@ -357,33 +318,36 @@
                                     BEAUTE LUXE
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <code class="text-start">
-                                    <div class="footdata">
-                                <ul>
-                                   
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Who we are
-                                            ? </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Terms &
-                                            Conditions </a>
-                                    </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> We respect
-                                            your privacy
-                                        </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Contact Us
-                                        </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Shipping &
-                                            Returns </a>
-                                    </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;">
-                                            Authentication
-                                            Certificate </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> FAQs </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <div class="footdata">
+                                            <ul>
+
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/who-we-are" style=" text-decoration:none;">
+                                                        Who we are
+                                                        ? </a> </li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/terms-conditions" style=" text-decoration:none;">
+                                                        Terms &
+                                                        Conditions </a>
+                                                </li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/privacy-policy" style=" text-decoration:none;">
+                                                        We respect
+                                                        your privacy
+                                                    </a> </li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/contact-us" style=" text-decoration:none;">
+                                                        Contact Us
+                                                    </a> </li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/shipping-returns" style=" text-decoration:none;">
+                                                        Shipping &
+                                                        Returns </a>
+                                                </li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/faqs" style=" text-decoration:none;">
+                                                        FAQs </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </code>
                                 </div>
                             </div>
@@ -399,30 +363,32 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <code class="text-start">
-                                    <div class="footdata">
-                                <ul>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=male"
-                                            style=" text-decoration:none;"> Fragrance
-                                            For Him
-                                        </a>
-                                    </li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/fragrance.html?gender=female"
-                                            style=" text-decoration:none;"> Fragrance
-                                            For Her
-                                        </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/makeup.html"
-                                            style=" text-decoration:none;"> Makeup
-                                        </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/skincare.html"
-                                            style=" text-decoration:none;"> Skincare
-                                        </a></li>
-                                    <li class="mt-3"> <a href="http://43.204.32.147/haircare.html"
-                                            style=" text-decoration:none;"> Haircare
+                                        <div class="footdata">
+                                            <ul>
+                                                <li class="mt-2"> <a
+                                                        href="https://beauteluxe.in/fragrance.html?gender=male"
+                                                        style=" text-decoration:none;"> Fragrance
+                                                        For Him
+                                                    </a>
+                                                </li>
+                                                <li class="mt-2"> <a
+                                                        href="https://beauteluxe.in/fragrance.html?gender=female"
+                                                        style=" text-decoration:none;"> Fragrance
+                                                        For Her
+                                                    </a></li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/makeup.html"
+                                                        style=" text-decoration:none;"> Makeup
+                                                    </a></li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/skincare.html"
+                                                        style=" text-decoration:none;"> Skincare
+                                                    </a></li>
+                                                <li class="mt-2"> <a href="https://beauteluxe.in/haircare.html"
+                                                        style=" text-decoration:none;"> Haircare
 
-                                        </a></li>
+                                                    </a></li>
 
-                                </ul>
-                            </div>
+                                            </ul>
+                                        </div>
                                     </code>
                                 </div>
                             </div>
@@ -430,27 +396,30 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
                                     SUBSCRIBE US
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <code><div class="footdata">
-                                <ul class="quick-links">
-                                    <div class="child-foot align-items-center">
-                                        <div class="foot-email-block">
-                                            <label class="f-email">
-                                                <input type="email" class="foot-email text-white"
-                                                    placeholder="Enter Your email address" />
-                                            </label>
-                                        </div>
-                                        <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
+                                    <code>
+                                        <div class="footdata">
+                                            <ul class="quick-links">
+                                                <div class="child-foot align-items-center">
+                                                    <div class="foot-email-block">
+                                                        <label class="f-email">
+                                                            <input type="email" class="foot-email text-white"
+                                                                placeholder="Enter Your email address" />
+                                                        </label>
+                                                    </div>
+                                                    <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
 
-                                    </div>
-                                </ul>
-                            </div></code>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </code>
                                 </div>
                             </div>
                         </div>
@@ -474,24 +443,48 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="container">
-                        <div class="slideshow-container showall2">
+                        <div class=" owl-carousel owl-theme showall2 ">
+
 
 
 
                         </div>
-                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="{{url('js/storelocator.js')}}"></script>
+
+    <!-- Button trigger modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
-    < link rel = "stylesheet"
-    href = "style.css" >
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
     </script>
+
+    <script type="text/javascript" src="{{ url('js/storelocator.js') }}"></script>
+
+    <link rel="stylesheet" href="style.css">
+
     <script src="main.js"></script>
 
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
@@ -500,34 +493,34 @@
     </script>
 
     <script>
-    function loadGoogleTranslate() {
-        new google.translate.TranslateElement("google_element");
-    }
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement("google_element");
+        }
     </script>
 
     <script>
-    document.querySelector('.hamburger').addEventListener('click', () =>
-        document.querySelector('.nav-list').classList.toggle('show'));
+        document.querySelector('.hamburger').addEventListener('click', () =>
+            document.querySelector('.nav-list').classList.toggle('show'));
     </script>
 
     <script>
-    document.querySelector('.cancel').addEventListener('click', () =>
-        document.querySelector('.nav-list').classList.toggle('show'));
+        document.querySelector('.cancel').addEventListener('click', () =>
+            document.querySelector('.nav-list').classList.toggle('show'));
     </script>
 
     <script>
-    $(".button_1").click(function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "/pages/test/",
-            data: {
-                id: $(this).val(), // < note use of 'this' here
-                access_token: $("#access_token").val()
-            },
+        $(".button_1").click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "/pages/test/",
+                data: {
+                    id: $(this).val(), // < note use of 'this' here
+                    access_token: $("#access_token").val()
+                },
 
+            });
         });
-    });
     </script>
 
 </body>

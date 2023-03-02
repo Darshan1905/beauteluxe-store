@@ -82,7 +82,7 @@ const storeCity = () => {
                     for (var j = 0; j < res.store[i].image.length; j++) {
                         image =
                             image +
-                            '<div class="mySlides1"> <img src="' +
+                            '<div class="item"> <img src="' +
                             url +
                             "/" +
                             res.store[i].image[j].image +
@@ -94,12 +94,7 @@ const storeCity = () => {
                     res.store[i].storename +
                     '</p><p class="storedata">' +
                     res.store[i].storeaddress +
-                    "</p>" +
-                    '<p class="mt-3"><a class="getdirectionbtn" href="' +
-                    res.store[i].Direction +
-                    '" target="_blank" >Get direction</a></p>' +
-                    '<a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-1 d-block store_details button_1 store-link" href="javascript: void(0);">Store Details</a>' +
-                    "<hr>";
+                    "</p>";
 
                 $(".store").append(html);
                 $(".showall2").html(image);
