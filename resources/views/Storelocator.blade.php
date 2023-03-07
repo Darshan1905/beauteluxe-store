@@ -67,9 +67,8 @@
 
 
                                 <a href=""> <h6 class="d-block mt-2" style="color: #000">STORES</h6></a>
-                              <a href="https://beauteluxe.in/customer/account/login/">  <img class="d-block d-md-none" src="{{asset('Images/mobile-user-icon.png')}}" alt=""
-                                    width="80%" /></a>
-                           
+                             
+
                         </div>
                     </a>
 
