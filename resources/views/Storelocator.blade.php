@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <link rel="stylesheet" href="{{ url('css/style.css') }}" />
-    <link rel="stylesheet" href="{{ url('css/store.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/store.css') }}" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
@@ -36,7 +36,7 @@
 
     {{-- jquery cdn link --}}
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 
 </head>
@@ -48,20 +48,20 @@
         <div class="container">
             <div class="header-top-nav-index d-flex align-items-center justify-content-between">
                 <div class="social-index pt-3 pb-3 d-flex justify-content-between">
-                  <a href="https://www.instagram.com/lovebeauteluxe">  <img class="head-social" src="{{asset('/Images/head-insta.png')}}" alt=""  /></a>
-                  <a href="https://www.linkedin.com/company/beauty-concepts-pvt.-ltd.">  <img class="head-social" src="{{asset('/Images/linkedin.png')}}" alt=""  /></a>
-                    <a href="https://www.facebook.com/lovebeauteluxe">  <img class="head-social-d" src="{{asset('/Images/facebook.png')}}" alt=""  /></a>
+                  <a href="https://www.instagram.com/lovebeauteluxe">  <img class="head-social" src="{{asset('Images/head-insta.png')}}" alt=""  /></a>
+                  <a href="https://www.linkedin.com/company/beauty-concepts-pvt.-ltd.">  <img class="head-social" src="{{asset('Images/linkedin.png')}}" alt=""  /></a>
+                    <a href="https://www.facebook.com/lovebeauteluxe">  <img class="head-social-d" src="{{asset('Images/facebook.png')}}" alt=""  /></a>
                 </div>
                 <div class="logo-index-page d-block pt-3 pb-3">
-                    <a href="https://beauteluxe.in/"> <img src="{{asset('/Images/Beauty-Luxe.png')}}" alt="" /></a>
+                    <a href="https://beauteluxe.in/"> <img src="{{asset('Images/Beauty-Luxe.png')}}" alt="" /></a>
                 </div>
                 <div class="Store-index pt-3 pb-3 d-flex align-items-center">
                     <a href="" style="text-decoration:none !important">
                         <div class=" d-flex align-items-center">
-                            <a href=""> <img src="{{asset('/Images/store-bcpl-icon.png')}}" alt="" width="95%" class="" /></a>
+                            <a href=""> <img src="{{asset('Images/store-bcpl-icon.png')}}" alt="" width="95%" class="" /></a>
                             <div>
                                 <a href=""> <h6 class="d-none d-md-block mt-2" style="color: #000">Stores</h6></a>
-                              <a href="https://beauteluxe.in/customer/account/login/">  <img class="d-block d-md-none" src="{{asset('/Images/mobile-user-icon.png')}}" alt=""
+                              <a href="https://beauteluxe.in/customer/account/login/">  <img class="d-block d-md-none" src="{{asset('Images/mobile-user-icon.png')}}" alt=""
                                     width="80%" /></a>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
     <section>
         <div class="row">
             <div class="position-relative">
-                <img src="{{asset('/Images/store-banner.jpeg')}}" alt="" style="height: 200px; width:100%; object-fit:cover">
+                <img src="{{asset('Images/store-banner.jpeg')}}" alt="" style="height: 200px; width:100%; object-fit:cover">
                 <div class="position-absolute store-banner-text">
                     <div class="d-flex">
                         <a href="https://beauteluxe.in/" class="text-white fw-bold"> Home </a> &nbsp;<a class="text-white"> > Haircare </a>
@@ -219,7 +219,7 @@
             <div class="row pt-5 pb-5">
                 <div class="col-lg-4 col-md-12 pt-3">
                     <div class="footer-logo-section">
-                        <img src="{{asset('/Images/footer-logo-new.png')}}" alt="" />
+                        <img src="{{asset('Images/footer-logo-new.png')}}" alt="" />
                         <p class="mt-3 foot-para" style="line-height:2;">
                             BeauteLuxe has redefined conventional shopping experience with a brand portfolio that represents the pinnacle of the craftsmanship and unsurpassed quality further reinforcing its position as India's most desirable destination for world class brands.
                         </p>
