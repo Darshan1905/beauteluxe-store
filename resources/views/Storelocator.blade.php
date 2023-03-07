@@ -31,6 +31,12 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        {{-- Google fonts --}}
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 
 
 
@@ -58,12 +64,12 @@
                 <div class="Store-index pt-3 pb-3 d-flex align-items-center">
                     <a href="" style="text-decoration:none !important">
                         <div class=" d-flex align-items-center">
-                            <a href=""> <img src="{{asset('Images/store-bcpl-icon.png')}}" alt="" width="95%" class="" /></a>
-                            <div>
-                                <a href=""> <h6 class="d-none d-md-block mt-2" style="color: #000">Stores</h6></a>
+
+
+                                <a href=""> <h6 class="d-block mt-2" style="color: #000">STORES</h6></a>
                               <a href="https://beauteluxe.in/customer/account/login/">  <img class="d-block d-md-none" src="{{asset('Images/mobile-user-icon.png')}}" alt=""
                                     width="80%" /></a>
-                            </div>
+                           
                         </div>
                     </a>
 
@@ -219,7 +225,8 @@
             <div class="row pt-5 pb-5">
                 <div class="col-lg-4 col-md-12 pt-3">
                     <div class="footer-logo-section">
-                        <img src="{{asset('Images/footer-logo-new.png')}}" alt="" />
+                        <a href="https://beauteluxe.in/">  <img src="{{asset('Images/footer-logo-new.png')}}" alt="" /></a>
+
                         <p class="mt-3 foot-para" style="line-height:2;">
                             BeauteLuxe has redefined conventional shopping experience with a brand portfolio that represents the pinnacle of the craftsmanship and unsurpassed quality further reinforcing its position as India's most desirable destination for world class brands.
                         </p>
